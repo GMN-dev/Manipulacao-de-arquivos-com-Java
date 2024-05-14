@@ -2,8 +2,9 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class Main {
-
 	public static void main(String[] args)  {
+
+//		=-=-=-=-=-=-==-=-=-=- Usando Scanner com File 
 		
 //		File file = new File("C:\\temp\\teste.txt");
 //		Scanner sc = null;
@@ -22,7 +23,7 @@ public class Main {
 //		}
 		
 		
-//		-=-=-=-=--=-=-=-=- FileReader/BufferedReader sem try-with-resources
+//		-=-=-=-=--=-=-=-=- FileReader/BufferedReader SEM try-with-resources
 		
 //		String stringPath = "C:\\temp\\teste.txt";
 //		
@@ -53,6 +54,23 @@ public class Main {
 //			}
 //		}
 		
+		
+//		-=-=-=-=-=-=-=-=-=-=-=-=- FileReader/BufferedReader COM try-with-resources
+		
+//		String stringPath = "C:\\temp\\teste.txt";
+//		
+//		
+//		try(BufferedReader buff = new BufferedReader(new FileReader(stringPath))){
+//			String line = buff.readLine();
+//			
+//			while(line != null){
+//					System.out.println(line);
+//					line = buff.readLine();
+//			}
+//			
+//		}catch(Exception e) {
+//			System.out.println(e.getMessage());
+//		}
 		
 	} 
 }
